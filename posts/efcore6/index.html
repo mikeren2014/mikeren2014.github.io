@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.90.1" />
+
+  <title>EF Core 6 &middot; My New Hugo Site</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="EF Core 6">
+<meta itemprop="description" content="EF Core 6 Temporal Table Migration Bundle   Tool
+  Create
+ dotnet tool install --global dotnet-ef   update
+ dotnet tool update --global dotnet-ef     Command
+  Create migration
+ dotnet ef migrations add   Bundle
+ dotnet ef migrations bundledotnet ef migrations bundle --help   Execute
+ efbundle.exe --connection &lt;connection string&gt;     Temporal Table Create  CREATE TABLE dbo."><meta itemprop="datePublished" content="2021-12-11T23:25:09+08:00" />
+<meta itemprop="dateModified" content="2021-12-11T23:25:09+08:00" />
+<meta itemprop="wordCount" content="152">
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="EF Core 6"/>
+<meta name="twitter:description" content="EF Core 6 Temporal Table Migration Bundle   Tool
+  Create
+ dotnet tool install --global dotnet-ef   update
+ dotnet tool update --global dotnet-ef     Command
+  Create migration
+ dotnet ef migrations add   Bundle
+ dotnet ef migrations bundledotnet ef migrations bundle --help   Execute
+ efbundle.exe --connection &lt;connection string&gt;     Temporal Table Create  CREATE TABLE dbo."/>
+
+
+<meta property="og:title" content="EF Core 6" />
+<meta property="og:description" content="EF Core 6 Temporal Table Migration Bundle   Tool
+  Create
+ dotnet tool install --global dotnet-ef   update
+ dotnet tool update --global dotnet-ef     Command
+  Create migration
+ dotnet ef migrations add   Bundle
+ dotnet ef migrations bundledotnet ef migrations bundle --help   Execute
+ efbundle.exe --connection &lt;connection string&gt;     Temporal Table Create  CREATE TABLE dbo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/efcore6/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-11T23:25:09+08:00" />
+<meta property="article:modified_time" content="2021-12-11T23:25:09+08:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://example.org/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        
+      },
+      "description":  null 
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://example.org/#website",
+      "url": "http://example.org/",
+      "name": "My New Hugo Site",
+      "description":  null ,
+      "publisher": {
+        "@id": "http://example.org/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://example.org/posts/efcore6/#webpage",
+      "url": "http://example.org/posts/efcore6/",
+      "name": "EF Core 6",
+      "isPartOf": {
+        "@id": "http://example.org/#website"
+      },
+      "about": {
+         "@id": "http://example.org/#author"
+      },
+      "datePublished": "2021-12-11T23:25:09+08:00",
+      "dateModified": "2021-12-11T23:25:09+08:00",
+      "description": "EF Core 6 Temporal Table Migration Bundle   Tool\n  Create\n dotnet tool install --global dotnet-ef\r   update\n dotnet tool update --global dotnet-ef\r     Command\n  Create migration\n dotnet ef migrations add\r   Bundle\n dotnet ef migrations bundle\rdotnet ef migrations bundle --help\r   Execute\n efbundle.exe --connection \u0026lt;connection string\u0026gt;\r     Temporal Table Create  CREATE TABLE dbo.",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://example.org/posts/efcore6/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://example.org/posts/efcore6/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://example.org/posts/efcore6/#webpage"
+      },
+      "headline": "EF Core 6",
+      "datePublished": "2021-12-11T23:25:09+08:00",
+      "dateModified": "2021-12-11T23:25:09+08:00",
+      "publisher": {
+        "@id": "http://example.org/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://example.org/posts/efcore6/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>My New Hugo Site</h1>
+
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://example.org/">Home</a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">EF Core 6</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-12-11T23:25:09&#43;0800">Dec 11, 2021</time> <span class="readtime">&middot; 1 min read</span>
+  </div>
+
+  <div>
+  <h1 id="ef-core-6httpsdocsmicrosoftcomen-usefcorewhat-is-newef-core-60whatsnew"><a href="https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-6.0/whatsnew">EF Core 6</a></h1>
+<h2 id="temporal-table">Temporal Table</h2>
+<h2 id="migration-bundle">Migration Bundle</h2>
+<ul>
+<li>
+<p>Tool</p>
+<ul>
+<li>
+<p>Create</p>
+<pre><code>  dotnet tool install --global dotnet-ef
+</code></pre>
+</li>
+<li>
+<p>update</p>
+<pre><code>  dotnet tool update --global dotnet-ef
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Command</p>
+<ul>
+<li>
+<p>Create migration</p>
+<pre><code>  dotnet ef migrations add
+</code></pre>
+</li>
+<li>
+<p>Bundle</p>
+<pre><code>  dotnet ef migrations bundle
+
+  dotnet ef migrations bundle --help
+</code></pre>
+</li>
+<li>
+<p>Execute</p>
+<pre><code>  efbundle.exe --connection &lt;connection string&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="temporal-tablehttpsdocsmicrosoftcomen-ussqlrelational-databasestablescreating-a-system-versioned-temporal-tableviewsql-server-ver15"><a href="https://docs.microsoft.com/en-us/sql/relational-databases/tables/creating-a-system-versioned-temporal-table?view=sql-server-ver15">Temporal Table</a></h1>
+<h2 id="create">Create</h2>
+<pre><code>    CREATE TABLE dbo.Employee
+    (
+        [EmployeeID] int NOT NULL PRIMARY KEY CLUSTERED
+        , [Name] nvarchar(100) NOT NULL
+        , [ValidFrom] datetime2 GENERATED ALWAYS AS ROW START
+        , [ValidTo] datetime2 GENERATED ALWAYS AS ROW END
+        , PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+    )
+    WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.EmployeeHistory));
+</code></pre>
+<h2 id="drop-table">Drop Table</h2>
+<pre><code>    ALTER TABLE [dbo].[Department] SET ( SYSTEM_VERSIONING = OFF  )
+    GO
+
+    /****** Object:  Table [dbo].[Department]    Script Date: 11/29/2021 8:23:54 AM ******/
+    DROP TABLE [dbo].[Department]
+    GO
+
+    /****** Object:  Table [dbo].[MSSQL_TemporalHistoryFor_901578250]    Script Date: 11/29/2021 8:23:54 AM ******/
+    DROP TABLE [dbo].[MSSQL_TemporalHistoryFor_901578250]
+    GO
+</code></pre>
+<h2 id="query">Query</h2>
+<ul>
+<li>FOR SYSTEM_TIME Clause
+<ul>
+<li>AS OF &lt;date_time&gt;</li>
+<li>FROM &lt;start_date_time&gt; TO &lt;end_date_time&gt;</li>
+<li>BETWEEN &lt;start_date_time&gt; AND &lt;end_date_time&gt;</li>
+<li>CONTAINED IN (&lt;start_date_time&gt; , &lt;end_date_time&gt;)</li>
+<li>ALL</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+
+  
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="http://example.org/posts/efcore6/"
+     data-text="EF Core 6"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="http://example.org/posts/efcore6/"
+     data-text="EF Core 6"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="http://example.org/posts/efcore6/"
+     data-text="EF Core 6"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="http://example.org/posts/efcore6/"
+     data-text="EF Core 6"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="http://example.org/posts/efcore6/"
+     data-text="EF Core 6"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy;  2021
+
+      
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+  
+</body>
+</html>

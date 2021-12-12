@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Dec 2021 23:25:09 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1234</title>
+      <link>http://example.org/posts/csharp10/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/csharp10/</guid>
+      <description>Top Level Statement
+  Program.cs &amp;ndash;&amp;gt; Main()
+  Compare
+ dotnet new console -f net5.0dotnet new console -f net6.0     Global using directives
+  global using
+ global using System.Math; Support Static
+ global using static System.Math;    Project file
+ &amp;lt;ItemGroup&amp;gt;&amp;lt;Using Include=&amp;quot;My.Awesome.Namespace&amp;quot; /&amp;gt;&amp;lt;/ItemGroup&amp;gt;   Alias
+ &amp;lt;ItemGroup&amp;gt;&amp;lt;Using Include=&amp;quot;My.Awesome.Namespace&amp;quot; Alias=&amp;quot;Awesome&amp;quot; /&amp;gt;&amp;lt;/ItemGroup&amp;gt; Equals</description>
+    </item>
+    
+    <item>
+      <title>Asp.net core 6</title>
+      <link>http://example.org/posts/net6/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/net6/</guid>
+      <description>Reference   Hot reload
+ dotnet watch Visual Studio    New Hosting Model
+ More    HTTP logging middleware
+  Migrate from 5.0 to 6.0 </description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://example.org/posts/docker/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/docker/</guid>
+      <description>Console App Create image  docker build -t counter-image -f Dockerfile . Create a container  docker create --name core-counter counter-image Manager the container  docker start core-counterdocker stop core-counter Connect to a container  docker attach --sig-proxy=false core-counter**--sig-proxy=false** parameter ensures that Ctrl+C will not stop the process in the containerdocker exec ?? Delete a container  docker rm core-counter Single run  docker run -it -rm counter-imagedocker run -it -rm counter-image 3 //[pass in the parameter] Change the ENTRYPOINT  docker run -it --rm --entrypoint &amp;quot;bash&amp;quot; counter-image Remvoe image  docker rmi counter-image:latest Asp.</description>
+    </item>
+    
+    <item>
+      <title>EF Core 6</title>
+      <link>http://example.org/posts/efcore6/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/efcore6/</guid>
+      <description>EF Core 6 Temporal Table Migration Bundle   Tool
+  Create
+ dotnet tool install --global dotnet-ef   update
+ dotnet tool update --global dotnet-ef     Command
+  Create migration
+ dotnet ef migrations add   Bundle
+ dotnet ef migrations bundledotnet ef migrations bundle --help   Execute
+ efbundle.exe --connection &amp;lt;connection string&amp;gt;     Temporal Table Create  CREATE TABLE dbo.</description>
+    </item>
+    
+    <item>
+      <title>EF Core 6</title>
+      <link>http://example.org/posts/hugo/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/hugo/</guid>
+      <description>Github DNS https://blog.csdn.net/qq_42418848/article/details/116980051
+Theme sites https://www.gohugo.org/theme/</description>
+    </item>
+    
+  </channel>
+</rss>

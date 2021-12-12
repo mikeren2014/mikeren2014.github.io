@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.90.1" />
+
+  <title>Docker &middot; My New Hugo Site</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Docker">
+<meta itemprop="description" content="Console App Create image  docker build -t counter-image -f Dockerfile . Create a container  docker create --name core-counter counter-image Manager the container  docker start core-counterdocker stop core-counter Connect to a container  docker attach --sig-proxy=false core-counter**--sig-proxy=false** parameter ensures that Ctrl&#43;C will not stop the process in the containerdocker exec ?? Delete a container  docker rm core-counter Single run  docker run -it -rm counter-imagedocker run -it -rm counter-image 3 //[pass in the parameter] Change the ENTRYPOINT  docker run -it --rm --entrypoint &quot;bash&quot; counter-image Remvoe image  docker rmi counter-image:latest Asp."><meta itemprop="datePublished" content="2021-12-11T23:25:09+08:00" />
+<meta itemprop="dateModified" content="2021-12-11T23:25:09+08:00" />
+<meta itemprop="wordCount" content="218">
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docker"/>
+<meta name="twitter:description" content="Console App Create image  docker build -t counter-image -f Dockerfile . Create a container  docker create --name core-counter counter-image Manager the container  docker start core-counterdocker stop core-counter Connect to a container  docker attach --sig-proxy=false core-counter**--sig-proxy=false** parameter ensures that Ctrl&#43;C will not stop the process in the containerdocker exec ?? Delete a container  docker rm core-counter Single run  docker run -it -rm counter-imagedocker run -it -rm counter-image 3 //[pass in the parameter] Change the ENTRYPOINT  docker run -it --rm --entrypoint &quot;bash&quot; counter-image Remvoe image  docker rmi counter-image:latest Asp."/>
+
+
+<meta property="og:title" content="Docker" />
+<meta property="og:description" content="Console App Create image  docker build -t counter-image -f Dockerfile . Create a container  docker create --name core-counter counter-image Manager the container  docker start core-counterdocker stop core-counter Connect to a container  docker attach --sig-proxy=false core-counter**--sig-proxy=false** parameter ensures that Ctrl&#43;C will not stop the process in the containerdocker exec ?? Delete a container  docker rm core-counter Single run  docker run -it -rm counter-imagedocker run -it -rm counter-image 3 //[pass in the parameter] Change the ENTRYPOINT  docker run -it --rm --entrypoint &quot;bash&quot; counter-image Remvoe image  docker rmi counter-image:latest Asp." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/docker/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-11T23:25:09+08:00" />
+<meta property="article:modified_time" content="2021-12-11T23:25:09+08:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://example.org/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        
+      },
+      "description":  null 
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://example.org/#website",
+      "url": "http://example.org/",
+      "name": "My New Hugo Site",
+      "description":  null ,
+      "publisher": {
+        "@id": "http://example.org/#author"
+      },
+      "inLanguage": "en-us"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://example.org/posts/docker/#webpage",
+      "url": "http://example.org/posts/docker/",
+      "name": "Docker",
+      "isPartOf": {
+        "@id": "http://example.org/#website"
+      },
+      "about": {
+         "@id": "http://example.org/#author"
+      },
+      "datePublished": "2021-12-11T23:25:09+08:00",
+      "dateModified": "2021-12-11T23:25:09+08:00",
+      "description": "Console App Create image  docker build -t counter-image -f Dockerfile .\r Create a container  docker create --name core-counter counter-image\r Manager the container  docker start core-counter\rdocker stop core-counter\r Connect to a container  docker attach --sig-proxy=false core-counter\r**--sig-proxy=false** parameter ensures that Ctrl+C will not stop the process in the container\rdocker exec ??\r Delete a container  docker rm core-counter\r Single run  docker run -it -rm counter-image\rdocker run -it -rm counter-image 3 //[pass in the parameter]\r Change the ENTRYPOINT  docker run -it --rm --entrypoint \u0026quot;bash\u0026quot; counter-image\r Remvoe image  docker rmi counter-image:latest\r Asp.",
+      "inLanguage": "en-us",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://example.org/posts/docker/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://example.org/posts/docker/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://example.org/posts/docker/#webpage"
+      },
+      "headline": "Docker",
+      "datePublished": "2021-12-11T23:25:09+08:00",
+      "dateModified": "2021-12-11T23:25:09+08:00",
+      "publisher": {
+        "@id": "http://example.org/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en-us",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://example.org/posts/docker/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>My New Hugo Site</h1>
+
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://example.org/">Home</a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Docker</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-12-11T23:25:09&#43;0800">Dec 11, 2021</time> <span class="readtime">&middot; 2 min read</span>
+  </div>
+
+  <div>
+  <h1 id="console-apphttpsdocsmicrosoftcomen-usdotnetcoredockerbuild-containertabswindows"><a href="https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows">Console App</a></h1>
+<h2 id="create-image">Create image</h2>
+<pre><code>    docker build -t counter-image -f Dockerfile .
+</code></pre>
+<h2 id="create-a-container">Create a container</h2>
+<pre><code>    docker create --name core-counter counter-image
+</code></pre>
+<h2 id="manager-the-container">Manager the container</h2>
+<pre><code>    docker start core-counter
+
+    docker stop core-counter
+</code></pre>
+<h2 id="connect-to-a-container">Connect to a container</h2>
+<pre><code>    docker attach --sig-proxy=false core-counter
+    **--sig-proxy=false** parameter ensures that Ctrl+C will not stop the process in the container
+
+    docker exec ??
+</code></pre>
+<h2 id="delete-a-container">Delete a container</h2>
+<pre><code>    docker rm core-counter
+</code></pre>
+<h2 id="single-run">Single run</h2>
+<pre><code>    docker run -it -rm counter-image
+    docker run -it -rm counter-image 3 //[pass in the parameter]
+</code></pre>
+<h2 id="change-the-entrypoint">Change the ENTRYPOINT</h2>
+<pre><code>    docker run -it --rm --entrypoint &quot;bash&quot; counter-image
+</code></pre>
+<h2 id="remvoe-image">Remvoe image</h2>
+<pre><code>    docker rmi counter-image:latest
+</code></pre>
+<h1 id="aspnet-corehttpsdocsmicrosoftcomen-usaspnetcorehost-and-deploydockerbuilding-net-docker-imagesviewaspnetcore-60"><a href="https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-6.0">Asp.net Core</a></h1>
+<h2 id="build-image">Build image</h2>
+<pre><code>    docker build --pull -t mywebapp .
+</code></pre>
+<h2 id="run">Run</h2>
+<pre><code>docker run -it --rm -p 5000:80 --name aspnetcore_sample aspnetapp
+
+docker exec aspnetcore_sample ipconfig // Get ipaddress from Windows container
+</code></pre>
+<h2 id="httpshttpsgithubcomdotnetdotnet-dockerblobmainsamplesrun-aspnetcore-https-developmentmd"><a href="https://github.com/dotnet/dotnet-docker/blob/main/samples/run-aspnetcore-https-development.md">HTTPS</a></h2>
+<h3 id="certification">Certification</h3>
+<pre><code>dotnet dev-certs https -ep $env:USERPROFILE\.aspnet\https\aspnetapp.pfx -p crypticpassword
+    dotnet dev-certs https --trust
+</code></pre>
+<ul>
+<li><strong>-ep</strong> Export</li>
+<li><strong>$env:USERPROFILE</strong> User profilePath. Only works in Powershell, in command prompt, use <strong>%USERPROFILE%</strong></li>
+<li><strong>-p</strong> Password</li>
+</ul>
+<h3 id="user-secrets">User Secrets</h3>
+<pre><code>dotnet user-secrets -p aspnetapp\aspnetapp.csproj set &quot;Kestrel:Certificates:Development:Password&quot; &quot;crypticpassword&quot;
+</code></pre>
+<h3 id="run-the-container">Run the container</h3>
+<pre><code>docker run --rm -it -p 8010:80 -p 8011:443 -e ASPNETCORE_URLS=&quot;https://+;http://+&quot; -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -v $env:APPDATA\microsoft\UserSecrets\:/root/.microsoft/usersecrets -v $env:USERPROFILE\.aspnet\https:/root/.aspnet/https/ mywebapp
+</code></pre>
+<p>For production</p>
+<pre><code>docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS=&quot;https://+;http://+&quot; -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_Kestrel__Certificates__Default__Password=&quot;crypticpassword&quot; -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx -v %USERPROFILE%\.aspnet\https:/https/ mcr.microsoft.com/dotnet/samples:aspnetapp
+</code></pre>
+<h1 id="misc">Misc</h1>
+<h3 id="visual-studio-container-toolshttpsdocsmicrosoftcomen-usvisualstudiocontainerstutorial-multicontainerviewvs-2022"><a href="https://docs.microsoft.com/en-us/visualstudio/containers/tutorial-multicontainer?view=vs-2022">Visual Studio Container Tools</a></h3>
+<h1 id="kubernetes">Kubernetes</h1>
+<h2 id="articals">Articals</h2>
+<ul>
+<li>
+<p><a href="https://andrewlock.net/deploying-asp-net-core-applications-to-kubernetes-part-1-an-introduction-to-kubernetes/">Asp.net core &amp; Kubernetes</a></p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/40049282/mounting-a-network-folder-to-a-docker-container-on-windows-10">Mount network folder</a></p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/core/docker/introduction">MS Docker Document</a></p>
+</li>
+</ul>
+
+  </div>
+
+  
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="http://example.org/posts/docker/"
+     data-text="Docker"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="http://example.org/posts/docker/"
+     data-text="Docker"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="http://example.org/posts/docker/"
+     data-text="Docker"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="http://example.org/posts/docker/"
+     data-text="Docker"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="http://example.org/posts/docker/"
+     data-text="Docker"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy;  2021
+
+      
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+  
+</body>
+</html>
