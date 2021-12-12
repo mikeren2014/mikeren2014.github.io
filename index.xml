@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Mike Blog</title>
+    <link>https://mikeren2014.github.io/</link>
+    <description>Recent content on Mike Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Dec 2021 23:25:09 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Dec 2021 23:25:09 +0800</lastBuildDate><atom:link href="https://mikeren2014.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1234</title>
-      <link>http://example.org/posts/csharp10/</link>
+      <title>Asp.net core 6</title>
+      <link>https://mikeren2014.github.io/posts/net6/</link>
       <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
       
-      <guid>http://example.org/posts/csharp10/</guid>
+      <guid>https://mikeren2014.github.io/posts/net6/</guid>
+      <description>Reference   Hot reload
+ dotnet watch Visual Studio    New Hosting Model
+ More    HTTP logging middleware
+  Migrate from 5.0 to 6.0 </description>
+    </item>
+    
+    <item>
+      <title>C# 10</title>
+      <link>https://mikeren2014.github.io/posts/csharp10/</link>
+      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
+      
+      <guid>https://mikeren2014.github.io/posts/csharp10/</guid>
       <description>Top Level Statement
   Program.cs &amp;ndash;&amp;gt; Main()
   Compare
@@ -25,32 +37,20 @@
     </item>
     
     <item>
-      <title>Asp.net core 6</title>
-      <link>http://example.org/posts/net6/</link>
-      <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
-      
-      <guid>http://example.org/posts/net6/</guid>
-      <description>Reference   Hot reload
- dotnet watch Visual Studio    New Hosting Model
- More    HTTP logging middleware
-  Migrate from 5.0 to 6.0 </description>
-    </item>
-    
-    <item>
       <title>Docker</title>
-      <link>http://example.org/posts/docker/</link>
+      <link>https://mikeren2014.github.io/posts/docker/</link>
       <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
       
-      <guid>http://example.org/posts/docker/</guid>
+      <guid>https://mikeren2014.github.io/posts/docker/</guid>
       <description>Console App Create image  docker build -t counter-image -f Dockerfile . Create a container  docker create --name core-counter counter-image Manager the container  docker start core-counterdocker stop core-counter Connect to a container  docker attach --sig-proxy=false core-counter**--sig-proxy=false** parameter ensures that Ctrl+C will not stop the process in the containerdocker exec ?? Delete a container  docker rm core-counter Single run  docker run -it -rm counter-imagedocker run -it -rm counter-image 3 //[pass in the parameter] Change the ENTRYPOINT  docker run -it --rm --entrypoint &amp;quot;bash&amp;quot; counter-image Remvoe image  docker rmi counter-image:latest Asp.</description>
     </item>
     
     <item>
       <title>EF Core 6</title>
-      <link>http://example.org/posts/efcore6/</link>
+      <link>https://mikeren2014.github.io/posts/efcore6/</link>
       <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
       
-      <guid>http://example.org/posts/efcore6/</guid>
+      <guid>https://mikeren2014.github.io/posts/efcore6/</guid>
       <description>EF Core 6 Temporal Table Migration Bundle   Tool
   Create
  dotnet tool install --global dotnet-ef   update
@@ -62,13 +62,14 @@
     </item>
     
     <item>
-      <title>EF Core 6</title>
-      <link>http://example.org/posts/hugo/</link>
+      <title>Hugo</title>
+      <link>https://mikeren2014.github.io/posts/hugo/</link>
       <pubDate>Sat, 11 Dec 2021 23:25:09 +0800</pubDate>
       
-      <guid>http://example.org/posts/hugo/</guid>
+      <guid>https://mikeren2014.github.io/posts/hugo/</guid>
       <description>Github DNS https://blog.csdn.net/qq_42418848/article/details/116980051
-Theme sites https://www.gohugo.org/theme/</description>
+Theme sites https://www.gohugo.org/theme/
+中文文档 https://www.gohugo.org/</description>
     </item>
     
   </channel>
